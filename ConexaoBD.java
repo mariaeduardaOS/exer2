@@ -2,14 +2,14 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ConexBD {
-    private static ConexBD instance;
+public class ConexaoBD {
+    private static ConexaoBD instance;
     private Connection connection;
     private String url = "jdbc:mysql://localhost:3306/empresa_construcao";
     private String username = "root";
     private String password = "password";
 
-    private ConexBD() throws SQLException {
+    private ConexaoBD() throws SQLException {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             this.connection = DriverManager.getConnection(url, username, password);
@@ -19,11 +19,11 @@ public class ConexBD {
         }
     }
 
-    public static ConexBD getInstance() throws SQLException {
+    public static ConexaoBD getInstance() throws SQLException {
         if (instance == null) {
-            instance = new ConexBD();
+            instance = new ConexaoBD();
         } else if (instance.getConnection().isClosed()) {
-            instance = new ConexBD();
+            instance = new ConexaoBD();
         }
         return instance;
     }
