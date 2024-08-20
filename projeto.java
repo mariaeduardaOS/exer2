@@ -1,13 +1,13 @@
 import java.sql.Date;
 
-public class Projeto {
+public class projeto {
     private int idprojeto;
     private String nomeProjeto;
     private String local;
     private Date dtInicio;
     private Date dtTermino;
 
-    public Projeto(int idprojeto, String nomeProjeto, String local, Date dtInicio, Date dtTermino) {
+    public projeto(int idprojeto, String nomeProjeto, String local, Date dtInicio, Date dtTermino) {
         this.idprojeto = idprojeto;
         this.nomeProjeto = nomeProjeto;
         this.local = local;
