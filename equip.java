@@ -1,9 +1,9 @@
-public class Equipamento {
+public class equip {
     private int idEquip;
     private String nomeEquip;
     private String tipo;
 
-    public Equipamento(int idEquip, String nomeEquip, String tipo) {
+    public equip(int idEquip, String nomeEquip, String tipo) {
         this.idEquip = idEquip;
         this.nomeEquip = nomeEquip;
         this.tipo = tipo;
