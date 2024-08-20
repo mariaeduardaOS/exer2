@@ -2,10 +2,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class alocacaoEngDAO.java {
+public class alocacaoEngDAO {
     private Connection connection;
 
-    public alocacaoEngDAO.java() throws SQLException {
+    public alocacaoEngDAO() throws SQLException {
         this.connection = ConexaoBD.getInstance().getConnection();
     }
 
