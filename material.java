@@ -1,9 +1,9 @@
-public class Material {
+public class material {
     private int idMaterial;
     private String nomeMaterial;
     private int quantidade;
 
-    public Material(int idMaterial, String nomeMaterial, int quantidade) {
+    public material(int idMaterial, String nomeMaterial, int quantidade) {
         this.idMaterial = idMaterial;
         this.nomeMaterial = nomeMaterial;
         this.quantidade = quantidade;
