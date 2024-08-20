@@ -1,9 +1,9 @@
-public class Engenheiro {
+public class eng {
     private int idEng;
     private String nomeEng;
     private String especialidade;
 
-    public Engenheiro(int idEng, String nomeEng, String especialidade) {
+    public eng(int idEng, String nomeEng, String especialidade) {
         this.idEng = idEng;
         this.nomeEng = nomeEng;
         this.especialidade = especialidade;
