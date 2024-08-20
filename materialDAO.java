@@ -7,7 +7,7 @@ public class materialDAO {
         this.connection = ConexaoBD.getInstance().getConnection();
     }
 
-    public void inserirMaterial(Material material) throws SQLException {
+    public void inserirMaterial(material material) throws SQLException {
         String sql = "INSERT INTO Material (ID_Material, Nome_Material, Quantidade) VALUES (?, ?, ?)";
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
             stmt.setInt(1, material.getIdMaterial());
