@@ -12,8 +12,8 @@ public class usoEquipDAO {
     public void registrarUsoEquipamento(int idProjeto, int idEquipamento) throws SQLException {
         String sql = "INSERT INTO Uso_Equipamento (ID_Projeto, ID_Equip) VALUES (?, ?)";
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
-            stmt.setInt(1, idprojeto);
-            stmt.setInt(2, idequip);
+            stmt.setInt(1, idProjeto);
+            stmt.setInt(2, idEquipamento);
             stmt.executeUpdate();
         }
     }
