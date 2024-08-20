@@ -7,11 +7,11 @@ public class operarioDAO {
         this.connection = ConexaoBD.getInstance().getConnection();
     }
 
-    public void inserirOperario(Operario operario) throws SQLException {
+    public void inserirOperario(operario operario) throws SQLException {
         String sql = "INSERT INTO Operario (ID_Operario, Nome_Operario, Funcao) VALUES (?, ?, ?)";
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
-            stmt.setInt(1, operario.getIdOperario());
-            stmt.setString(2, operario.getNomeOperario());
+            stmt.setInt(1, operario.getIdoperario());
+            stmt.setString(2, operario.getnomeoperario());
             stmt.setString(3, operario.getFuncao());
             stmt.executeUpdate();
         }
