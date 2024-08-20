@@ -12,8 +12,8 @@ public class alocacaooperarioDAO {
     public void alocarOperario(int idProjeto, int idOperario) throws SQLException {
         String sql = "INSERT INTO Alocacao_Operario (ID_Projeto, ID_Operario) VALUES (?, ?)";
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
-            stmt.setInt(1, idprojeto);
-            stmt.setInt(2, idoperario);
+            stmt.setInt(1, idProjeto);
+            stmt.setInt(2, idOperario);
             stmt.executeUpdate();
         }
     }
